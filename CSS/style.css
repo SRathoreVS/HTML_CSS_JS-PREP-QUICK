@@ -1,0 +1,109 @@
+/* BACKGROUND */
+
+body {
+    background-color: gray;
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+
+    background-color: antiquewhite;
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.qmChZWM0Uwf37pyZcPAgmAHaFj&pid=Api&P=0&h=180");
+
+    /* BORDER */
+
+    border: dashed ;
+    border-radius: 20px;
+    border-width: 6px 3px;
+    border-bottom: 5px;
+    border-color: burlywood greenyellow lavender mediumorchid;
+
+    /* TEXT */
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+p{
+    background-color: azure;
+    text-align: justify;
+    text-decoration: underline sienna;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-shadow: 1px 1px 5px;
+
+}
+
+/*ANCHOR TAG  */
+
+a {
+    color: chocolate;
+    text-decoration: none;
+    background-color: azure;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 12px;
+}
+a:visited{
+    color: hotpink;
+}
+a:active{
+    color: blue;
+}
+a:hover{
+    color: yellowgreen;
+    box-shadow: 2px 2px black;
+
+}
+
+/* FLEXBOX */
+
+div{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content:space-between;
+    
+    
+}
+div > span {
+    border: 4px solid antiquewhite;
+    padding: 30px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px cadetblue;
+
+    /* BOX-Sizing : inside box */
+    box-sizing: border-box; 
+
+}
+
+/* TRANSFORM */
+
+.one {
+    transform: rotate(30deg);
+}
+
+.two{
+    transform: scale(1);
+    transform: rotate(-30deg);
+}
+
+/* GRID */
+
+.colors{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 10px;
+    align-items: center;
+    
+}
+.nums {
+    background-color: khaki;
+    border-radius: 20px;
+    box-shadow: 5px 5px lightgreen;
+}
