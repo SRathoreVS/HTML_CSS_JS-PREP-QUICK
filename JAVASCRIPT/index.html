@@ -4,6 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      #container {
+        width: 400px;
+        height: 400px;
+        background-color: aquamarine;
+        position: relative;
+        border: 2px solid brown;
+        border-radius: 5px;
+      }
+      #inside {
+        width: 50px;
+        height: 50px;
+        background-color: fuchsia;
+        position: absolute;
+        border: 2px solid yellowgreen;
+        border-radius: 5px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid brown;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div button{
+        text-align: center;
+        
+      }
+    </style>
   </head>
   <body>
     <!-- <div> Top 5 Sigma
@@ -16,10 +48,22 @@
         </ul>
     </div> -->
 
-    <h1>
+    <!-- <h1>
       Satyam Rathore <span style="display: none">Subscribe to channel</span>
     </h1>
-    <div id="hero" about="heloooooo"></div>
+    <div id="hero" about="heloooooo"></div> -->
+
+    <!-- <div id="container">
+      <div id="inside"></div>
+    </div>
+    <br>
+    <button onclick="myMove()">Click</button>
+    <br>
+    <br> -->
+
+    <div onmouseover="onMouseover()">
+      <button onclick="changeColor()" id="change">color Change</button>
+    </div>
 
     <!-- <script src="script.js"></script> -->
     <!-- <script src="script2.js"></script> -->
