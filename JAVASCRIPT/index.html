@@ -36,7 +36,7 @@
         
       }
     </style> -->
-     <style>
+    <!-- <style>
       body {
         padding: 20px;
         background-color: blueviolet;
@@ -52,7 +52,39 @@
         background-color: cadetblue;
         display: block;
       }
-    </style> 
+    </style>  -->
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    #log , #state {
+      width: 500px;
+      height: 50px;
+      border: 1px solid black;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      background-color: aquamarine;
+      border-radius: 10px;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+  </style>
+  
   </head>
   <body>
     <!-- <div> Top 5 Sigma
@@ -86,13 +118,27 @@
     <br />
     <button id="btn">color Change</button> -->
 
-    
+    <!--     
     <div>
       <span>
         <button>Click Me</button>
       </span>
-    </div>
+    </div> -->
 
+    <div class="container">
+      <h1 style="border: 2px solid black; padding: 2px; border-radius: 10px">
+        Key Logger
+      </h1>
+      <p>Dont forget to learn and do practical</p>
+      <div class="button-container">
+        <button id="start-btn">Start Logging Key Press</button>
+        <button id="stop-btn">Stop Logging Key Press</button>
+      </div>
+      <div class="button-container">
+        <div id="log"></div>
+        <div id="state"></div>
+      </div>
+    </div>
 
     <!-- <script src="script.js"></script> -->
     <!-- <script src="script2.js"></script> -->
@@ -100,7 +146,8 @@
     <!-- <script src="traversal.js"></script> -->
     <!-- <script src="annimationDom.js"></script> -->
     <!-- <script src="event.js"></script> -->
-     <!-- <script src="bubbling.js"></script> -->
-      <script src="delegation.js"></script>
+    <!-- <script src="bubbling.js"></script> -->
+    <!-- <script src="delegation.js"></script> -->
+    <script src="keyLogger.js"></script>
   </body>
 </html>
